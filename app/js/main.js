@@ -164,6 +164,27 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   })();
 
+  // * ===== Slider
+  (function slider() {
+    const sliderEl = document.querySelectorAll('.team__slider');
+    sliderEl.forEach((el) => {
+      if (el) {
+        new Swiper(el, {
+          slidesPerView: 'auto',
+          spaceBetween: 20,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.team .swiper-button-next',
+            prevEl: '.team .swiper-button-prev',
+          },
+        });
+      }
+    });
+  })();
+
   // * ===== Fixed Header
   (function fixedHeader() {
     function scrollHeader() {
