@@ -223,232 +223,356 @@
 
 
       <main class="main">
-        <div class="grid">
-  <div class="grid__left">
-    <div class="side">
-      <div class="side__inner">
-        <ul class="side__list">
-          <li class="side__item">
-            <a class="side__link" href="#">
-              <picture>
-                <source srcset="img/side-links/1.webp" type="image/webp" />
-                <img src="img/side-links/1.png" alt="Карусели" />
-              </picture>
-              <span>Карусели</span>
-            </a>
-          </li>
-          <li class="side__item">
-            <a class="side__link" href="#">
-              <picture>
-                <source srcset="img/side-links/2.webp" type="image/webp" />
-                <img src="img/side-links/2.png" alt="Карусели" />
-              </picture>
-              <span> Паровозы </span>
-            </a>
-          </li>
-          <li class="side__item">
-            <a class="side__link" href="#">
-              <picture>
-                <source srcset="img/side-links/3.webp" type="image/webp" />
-                <img src="img/side-links/3.png" alt="Карусели" />
-              </picture>
-              <span> Машинки </span>
-            </a>
-          </li>
-          <li class="side__item">
-            <a class="side__link" href="#">
-              <picture>
-                <source srcset="img/side-links/4.webp" type="image/webp" />
-                <img src="img/side-links/4.png" alt="Карусели" />
-              </picture>
-              <span> Автодромы </span>
-            </a>
-          </li>
-          <li class="side__item">
-            <a class="side__link" href="#">
-              <picture>
-                <source srcset="img/side-links/5.webp" type="image/webp" />
-                <img src="img/side-links/5.png" alt="Карусели" />
-              </picture>
-              <span>Семейные аттракционы</span>
-            </a>
-          </li>
-          <li class="side__item">
-            <a class="side__link" href="#">
-              <picture>
-                <source srcset="img/side-links/6.webp" type="image/webp" />
-                <img src="img/side-links/6.png" alt="Карусели" />
-              </picture>
-              <span> Зимние атрракционы </span>
-            </a>
-          </li>
-          <li class="side__item">
-            <a class="side__link" href="#">
-              <picture>
-                <source srcset="img/side-links/1.webp" type="image/webp" />
-                <img src="img/side-links/1.png" alt="Карусели" />
-              </picture>
-              <span> Карусели </span>
-            </a>
-          </li>
-          <li class="side__item">
-            <a class="side__link" href="#">
-              <picture>
-                <source srcset="img/side-links/2.webp" type="image/webp" />
-                <img src="img/side-links/2.png" alt="Карусели" />
-              </picture>
-              <span> Паровозы </span>
-            </a>
-          </li>
-          <li class="side__item">
-            <a class="side__link" href="#">
-              <picture>
-                <source srcset="img/side-links/3.webp" type="image/webp" />
-                <img src="img/side-links/3.png" alt="Карусели" />
-              </picture>
-              <span> Машинки </span>
-            </a>
-          </li>
-          <li class="side__item">
-            <a class="side__link" href="#">
-              <picture>
-                <source srcset="img/side-links/4.webp" type="image/webp" />
-                <img src="img/side-links/4.png" alt="Карусели" />
-              </picture>
-              <span> Автодромы </span>
-            </a>
-          </li>
-          <li class="side__item">
-            <a class="side__link" href="#">
-              <picture>
-                <source srcset="img/side-links/5.webp" type="image/webp" />
-                <img src="img/side-links/5.png" alt="Карусели" />
-              </picture>
-              <span>Семейные аттракционы</span>
-            </a>
-          </li>
-          <li class="side__item">
-            <a class="side__link" href="#">
-              <picture>
-                <source srcset="img/side-links/6.webp" type="image/webp" />
-                <img src="img/side-links/6.png" alt="Карусели" />
-              </picture>
-              <span> Зимние атрракционы </span>
-            </a>
-          </li>
-          <li class="side__item">
-            <a class="side__link" href="#">
-              <picture>
-                <source srcset="img/side-links/7.webp" type="image/webp" />
-                <img src="img/side-links/7.png" alt="Карусели" />
-              </picture>
-              <span>Иллюминация</span>
-            </a>
-          </li>
-          <li class="side__item">
-            <a class="side__link" href="#">
-              <picture>
-                <source srcset="img/side-links/8.webp" type="image/webp" />
-                <img src="img/side-links/8.png" alt="Карусели" />
-              </picture>
-              <span> Сервисное обслуживание </span>
-            </a>
-          </li>
-        </ul>
+        <div class="grid-relative grid-relative--left-static">
+  <!-- <div class="overlay"></div> -->
+  <div class="container">
+    <div class="grid-relative__wrapper">
+      <div class="grid-relative__left">
+        <form class="categories__filters filters">
+          <div class="filters__inner">
+            <div class="filters__box accordion">
+              <button class="filters__control accordion-control" type="button">
+                <span>Тематика аттракционов</span>
+              </button>
+              <div class="filters__content accordion-content">
+                <div class="filters__wrap">
+                  <ul
+                    class="filters__list"
+                    data-simplebar
+                    data-simplebar-auto-hide
+                  >
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Цирк</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Мультфильмы</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Животные</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Природа</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Океан</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Транспорт</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Цирк</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Мультфильмы</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Животные</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Природа</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Океан</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Транспорт</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="filters__box accordion">
+              <button class="filters__control accordion-control" type="button">
+                <span>Цена</span>
+              </button>
+              <div class="filters__content accordion-content">
+                <div class="filters__wrap">
+                  <div class="range-slider range-slider--price">
+                    <div class="range-slider__range" id="slider-price"></div>
+                    <div class="range-slider__values">
+                      <input
+                        class="range-slider__min"
+                        type="text"
+                        placeholder="От 10 000"
+                      />
+                      <span>-</span>
+                      <input
+                        class="range-slider__max"
+                        type="text"
+                        placeholder="До 100 млн"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filters__box accordion">
+              <button class="filters__control accordion-control" type="button">
+                <span>Длина, м.</span>
+              </button>
+              <div class="filters__content accordion-content">
+                <div class="filters__wrap">
+                  <div class="range-slider range-slider--length">
+                    <div class="range-slider__range" id="slider-length"></div>
+                    <div class="range-slider__values">
+                      <input
+                        class="range-slider__min"
+                        type="text"
+                        placeholder="4"
+                      />
+                      <span>-</span>
+                      <input
+                        class="range-slider__max"
+                        type="text"
+                        placeholder="30"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filters__box accordion">
+              <button class="filters__control accordion-control" type="button">
+                <span>Ширина, м.</span>
+              </button>
+              <div class="filters__content accordion-content">
+                <div class="filters__wrap">
+                  <div class="range-slider range-slider--width">
+                    <div class="range-slider__range" id="slider-width"></div>
+                    <div class="range-slider__values">
+                      <input
+                        class="range-slider__min"
+                        type="text"
+                        placeholder="4"
+                      />
+                      <span>-</span>
+                      <input
+                        class="range-slider__max"
+                        type="text"
+                        placeholder="30"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filters__box accordion">
+              <button class="filters__control accordion-control" type="button">
+                <span>Общая высота, м.</span>
+              </button>
+              <div class="filters__content accordion-content">
+                <div class="filters__wrap">
+                  <div class="range-slider range-slider--height">
+                    <div class="range-slider__range" id="slider-height"></div>
+                    <div class="range-slider__values">
+                      <input
+                        class="range-slider__min"
+                        type="text"
+                        placeholder="4"
+                      />
+                      <span>-</span>
+                      <input
+                        class="range-slider__max"
+                        type="text"
+                        placeholder="12"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filters__box">
+              <button class="filters__btn" type="reset">Сбросить фильтр</button>
+            </div>
+          </div>
+        </form>
       </div>
-    </div>
-  </div>
-  <div class="grid__right">
-    <div class="news-top">
-      <div class="news-top__inner">
+      <div class="grid-relative__right">
         <div class="breadcrumbs">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
               <a class="breadcrumbs__link" href="#">Главная</a>
             </li>
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#"> О нас</a>
+              <a class="breadcrumbs__link" href="#">Каталог</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Карусели</a>
             </li>
           </ul>
         </div>
-        <div class="news-top__offer">
-          <h1 class="news-top__title">Новости</h1>
+        <section class="categories">
+          <div class="categories__top">
+            <h1 class="categories__title">Карусели</h1>
 
-          <div class="news-top__text">
-            <p>
-              Каждую неделю для вас мы готовим интересный контент, это может
-              быть обучение, интервью, видео уроки.
-            </p>
-            <p>
-              А так же раз в неделю мы готовим для вас обзоры своих товаров.
-            </p>
-            <p>Обязательно следите за всеми новостями компании.</p>
+            <button
+              class="categories__filter"
+              type="button"
+              aria-label="Фильтры"
+            ></button>
           </div>
 
-          <ul class="news-top__list">
-            <li class="news-top__item">
-              <article class="news-card">
-                <span class="news-card__badge">Обзоры</span>
-
-                <a class="news-card__top" href="#">
+          <ul class="categories__list">
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/news/1.webp" type="image/webp" />
-                    <img src="img/news/1.jpg" alt="news" />
+                    <source srcset="img/products/1.webp" type="image/webp" />
+                    <img src="img/products/1.jpg" alt="products" />
                   </picture>
                 </a>
-                <div class="news-card__body">
-                  <div class="news-card__details">
-                    <p class="news-card__detail">20.09.2022</p>
-                    <p class="news-card__detail">15:00</p>
-                  </div>
-                  <h3 class="news-card__title">
-                    <a href="#">
-                      Маркетинг для батутного бизнеса. Часть 1. Социальные Сети
-                    </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
                   </h3>
-                  <p class="news-card__text">
-                    Друзья, всем привет, с вами компания Air-games. Всем кучу
-                    посетителей! Сегодня мы открываем для вас очень большую и
-                    важную тему: «Маркетинг для батутного бизнеса».
-                  </p>
+                  <span class="products-card__price">3 194 148 ₽</span>
                 </div>
               </article>
             </li>
-            <li class="news-top__item">
-              <article class="news-card">
-                <span class="news-card__badge">Обзоры</span>
-
-                <a class="news-card__top" href="#">
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/news/1.webp" type="image/webp" />
-                    <img src="img/news/1.jpg" alt="news" />
+                    <source srcset="img/products/1.webp" type="image/webp" />
+                    <img src="img/products/1.jpg" alt="products" />
                   </picture>
                 </a>
-                <div class="news-card__body">
-                  <div class="news-card__details">
-                    <p class="news-card__detail">20.09.2022</p>
-                    <p class="news-card__detail">15:00</p>
-                  </div>
-                  <h3 class="news-card__title">
-                    <a href="#">
-                      Самый продвинутый аттракцион детский
-паровозик на колесах
-                    </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
                   </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/1.webp" type="image/webp" />
+                    <img src="img/products/1.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/1.webp" type="image/webp" />
+                    <img src="img/products/1.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/1.webp" type="image/webp" />
+                    <img src="img/products/1.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/1.webp" type="image/webp" />
+                    <img src="img/products/1.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
                 </div>
               </article>
             </li>
           </ul>
-        </div>
+        </section>
       </div>
     </div>
   </div>
 </div>
 
-        <div class="news-grid">
+        <section class="news">
   <div class="container">
-    <ul class="news-grid__list">
-      <li class="news-grid__item">
+    <div class="news__top">
+      <h2 class="news__title">Обзоры и новости</h2>
+      <a class="news__link" href="#">Все новости</a>
+    </div>
+
+    <ul class="news__list">
+      <li class="news__item">
         <article class="news-card">
           <span class="news-card__badge">Обзоры</span>
 
@@ -472,14 +596,14 @@
           </div>
         </article>
       </li>
-      <li class="news-grid__item">
+      <li class="news__item">
         <article class="news-card">
-          <span class="news-card__badge">Обзоры</span>
+          <a class="news-card__badge" href="#">Обзоры</a>
 
           <a class="news-card__top" href="#">
             <picture>
-              <source srcset="img/news/1.webp" type="image/webp" />
-              <img src="img/news/1.jpg" alt="news" />
+              <source srcset="img/news/2.webp" type="image/webp" />
+              <img src="img/news/2.jpg" alt="news" />
             </picture>
           </a>
           <div class="news-card__body">
@@ -489,21 +613,20 @@
             </div>
             <h3 class="news-card__title">
               <a href="#">
-                Наш первый парк в Ульяновске. Презентуем новый бизнес, надувные
-                парки развлечений для всех возрастов
+                Самый продвинутый аттракцион детский паровозик на колесах
               </a>
             </h3>
           </div>
         </article>
       </li>
-      <li class="news-grid__item">
+      <li class="news__item">
         <article class="news-card">
           <span class="news-card__badge">Обзоры</span>
 
           <a class="news-card__top" href="#">
             <picture>
-              <source srcset="img/news/1.webp" type="image/webp" />
-              <img src="img/news/1.jpg" alt="news" />
+              <source srcset="img/news/3.webp" type="image/webp" />
+              <img src="img/news/3.jpg" alt="news" />
             </picture>
           </a>
           <div class="news-card__body">
@@ -513,21 +636,21 @@
             </div>
             <h3 class="news-card__title">
               <a href="#">
-                Маркетинг для батутного бизнеса. <br />
-                Часть 1. Социальные Сети
+                Новые изделия Умная Sreda на улицах
+                <span> наших городов</span>
               </a>
             </h3>
           </div>
         </article>
       </li>
-      <li class="news-grid__item">
+      <li class="news__item">
         <article class="news-card">
           <span class="news-card__badge">Обзоры</span>
 
           <a class="news-card__top" href="#">
             <picture>
-              <source srcset="img/news/1.webp" type="image/webp" />
-              <img src="img/news/1.jpg" alt="news" />
+              <source srcset="img/news/4.webp" type="image/webp" />
+              <img src="img/news/4.jpg" alt="news" />
             </picture>
           </a>
           <div class="news-card__body">
@@ -537,21 +660,21 @@
             </div>
             <h3 class="news-card__title">
               <a href="#">
-                Маркетинг для батутного бизнеса. <br />
-                Часть 1. Социальные Сети
+                Новые изделия Умная Sreda на улицах
+                <span> наших городов</span>
               </a>
             </h3>
           </div>
         </article>
       </li>
-      <li class="news-grid__item">
+      <li class="news__item">
         <article class="news-card">
           <span class="news-card__badge">Обзоры</span>
 
           <a class="news-card__top" href="#">
             <picture>
-              <source srcset="img/news/1.webp" type="image/webp" />
-              <img src="img/news/1.jpg" alt="news" />
+              <source srcset="img/news/5.webp" type="image/webp" />
+              <img src="img/news/5.jpg" alt="news" />
             </picture>
           </a>
           <div class="news-card__body">
@@ -561,116 +684,16 @@
             </div>
             <h3 class="news-card__title">
               <a href="#">
-                Маркетинг для батутного бизнеса. <br />
-                Часть 1. Социальные Сети
-              </a>
-            </h3>
-          </div>
-        </article>
-      </li>
-      <li class="news-grid__item">
-        <article class="news-card">
-          <span class="news-card__badge">Обзоры</span>
-
-          <a class="news-card__top" href="#">
-            <picture>
-              <source srcset="img/news/1.webp" type="image/webp" />
-              <img src="img/news/1.jpg" alt="news" />
-            </picture>
-          </a>
-          <div class="news-card__body">
-            <div class="news-card__details">
-              <p class="news-card__detail">20.09.2022</p>
-              <p class="news-card__detail">15:00</p>
-            </div>
-            <h3 class="news-card__title">
-              <a href="#">
-                Маркетинг для батутного бизнеса. <br />
-                Часть 1. Социальные Сети
-              </a>
-            </h3>
-          </div>
-        </article>
-      </li>
-      <li class="news-grid__item">
-        <article class="news-card">
-          <span class="news-card__badge">Обзоры</span>
-
-          <a class="news-card__top" href="#">
-            <picture>
-              <source srcset="img/news/1.webp" type="image/webp" />
-              <img src="img/news/1.jpg" alt="news" />
-            </picture>
-          </a>
-          <div class="news-card__body">
-            <div class="news-card__details">
-              <p class="news-card__detail">20.09.2022</p>
-              <p class="news-card__detail">15:00</p>
-            </div>
-            <h3 class="news-card__title">
-              <a href="#">
-                Маркетинг для батутного бизнеса. <br />
-                Часть 1. Социальные Сети
-              </a>
-            </h3>
-          </div>
-        </article>
-      </li>
-      <li class="news-grid__item">
-        <article class="news-card">
-          <span class="news-card__badge">Обзоры</span>
-
-          <a class="news-card__top" href="#">
-            <picture>
-              <source srcset="img/news/1.webp" type="image/webp" />
-              <img src="img/news/1.jpg" alt="news" />
-            </picture>
-          </a>
-          <div class="news-card__body">
-            <div class="news-card__details">
-              <p class="news-card__detail">20.09.2022</p>
-              <p class="news-card__detail">15:00</p>
-            </div>
-            <h3 class="news-card__title">
-              <a href="#">
-                Маркетинг для батутного бизнеса. <br />
-                Часть 1. Социальные Сети
-              </a>
-            </h3>
-          </div>
-        </article>
-      </li>
-      <li class="news-grid__item">
-        <article class="news-card">
-          <span class="news-card__badge">Обзоры</span>
-
-          <a class="news-card__top" href="#">
-            <picture>
-              <source srcset="img/news/1.webp" type="image/webp" />
-              <img src="img/news/1.jpg" alt="news" />
-            </picture>
-          </a>
-          <div class="news-card__body">
-            <div class="news-card__details">
-              <p class="news-card__detail">20.09.2022</p>
-              <p class="news-card__detail">15:00</p>
-            </div>
-            <h3 class="news-card__title">
-              <a href="#">
-                Маркетинг для батутного бизнеса. <br />
-                Часть 1. Социальные Сети
+                Новые изделия Умная Sreda на улицах
+                <span> наших городов</span>
               </a>
             </h3>
           </div>
         </article>
       </li>
     </ul>
-
-    <button class="news-grid__btn btn btn--bordered" type="button">
-      Загрузить еще
-    </button>
   </div>
-</div>
+</section>
 
         <section class="subscribe">
   <div class="container">
