@@ -41,7 +41,7 @@
   </head>
 
   <body>
-    <div class="popup popup--online-booking">
+    <div class="popup popup--callback">
   <div class="popup__container">
     <button class="popup__close" type="button" aria-label="Закрыть">
       <svg width="15" height="15">
@@ -49,7 +49,7 @@
       </svg>
     </button>
     <div class="popup__wrapper">
-      <h2 class="popup__title">Онлайн запись</h2>
+      <h2 class="popup__title">Заказать звонок</h2>
       <div class="popup__text">
         <p>Оставьте ваши данные и мы вам перезвоним.</p>
       </div>
@@ -133,21 +133,38 @@
 
     <ul class="mobile-menu__list">
       <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+        <a class="mobile-menu__link" href="#"><span>Каталог</span></a>
       </li>
       <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+        <a class="mobile-menu__link" href="#"><span>О нас</span></a>
       </li>
       <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+        <a class="mobile-menu__link" href="#"><span>Гарантии</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Доставка и оплата</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Новости</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Контакты</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Покупка в кредит</span></a>
       </li>
     </ul>
 
     <div class="mobile-menu__btns">
-      <a class="mobile-menu__phone" href="tel:+74994990917">
-        +7 (499) 499 09 17
+      <a class="mobile-menu__phone" href="tel:+74953635270">8 (495) 363 52 70</a>
+      <a class="mobile-menu__phone" href="tel:+79660505699">8 (966) 050 56 99</a>
+      <a
+        class="mobile-menu__btn btn btn--purple btn--download"
+        href="#"
+        download=""
+      >
+        Скачать прайс - лист
       </a>
-      <!-- <button class="mobile-menu__btn btn" type="button">Онлайн запись</button> -->
     </div>
   </div>
   <!-- Mobile Menu -->
@@ -173,10 +190,16 @@
         </a>
 
         <div class="header__btns">
-          <button class="header__btn btn" type="button">Заказать звонок</button>
-          <a class="header__btn btn btn--purple btn--download" href="#"
-            >Скачать прайс - лист</a
+          <button class="header__btn btn btn-callback" type="button">
+            Заказать звонок
+          </button>
+          <a
+            class="header__btn btn btn--purple btn--download"
+            href="#"
+            download=""
           >
+            Скачать прайс - лист
+          </a>
         </div>
       </div>
     </div>
@@ -780,15 +803,47 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
                   <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
+                    <a href="#">Парковый аттракцион Самолет</a>
                   </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Мини-колесо обозрения</a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Сумасшедшая волна</a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
                 </div>
               </article>
             </li>
@@ -812,15 +867,15 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
                   <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
+                    <a href="#">Парковый аттракцион Самолет</a>
                   </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
+                  <span class="products-card__price">1 277 181 ₽</span>
                 </div>
               </article>
             </li>
@@ -828,15 +883,15 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
                   <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
+                    <a href="#">Аттракцион Мини-колесо обозрения</a>
                   </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
+                  <span class="products-card__price">2 922 181 ₽</span>
                 </div>
               </article>
             </li>
@@ -844,175 +899,15 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
                   <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
+                    <a href="#">Аттракцион Сумасшедшая волна</a>
                   </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
+                  <span class="products-card__price">6 319 227 ₽</span>
                 </div>
               </article>
             </li>
@@ -1044,15 +939,47 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
                   <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
+                    <a href="#">Парковый аттракцион Самолет</a>
                   </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Мини-колесо обозрения</a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Сумасшедшая волна</a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
                 </div>
               </article>
             </li>
@@ -1076,6 +1003,62 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Парковый аттракцион Самолет</a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Мини-колесо обозрения</a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Сумасшедшая волна</a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
+                </div>
+              </article>
+            </li>
+          </ul>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="products__content tabs-new__content">
+        <div class="products__slider slider-row swiper">
+          <ul class="products__slides swiper-wrapper">
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
                     <source srcset="img/products/1.webp" type="image/webp" />
                     <img src="img/products/1.jpg" alt="products" />
                   </picture>
@@ -1085,6 +1068,54 @@
                     <a href="#"> Аттракцион прыгающие машинки </a>
                   </h3>
                   <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Парковый аттракцион Самолет</a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Мини-колесо обозрения</a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Сумасшедшая волна</a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
                 </div>
               </article>
             </li>
@@ -1108,6 +1139,62 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Парковый аттракцион Самолет</a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Мини-колесо обозрения</a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Сумасшедшая волна</a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
+                </div>
+              </article>
+            </li>
+          </ul>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="products__content tabs-new__content">
+        <div class="products__slider slider-row swiper">
+          <ul class="products__slides swiper-wrapper">
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
                     <source srcset="img/products/1.webp" type="image/webp" />
                     <img src="img/products/1.jpg" alt="products" />
                   </picture>
@@ -1117,6 +1204,54 @@
                     <a href="#"> Аттракцион прыгающие машинки </a>
                   </h3>
                   <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Парковый аттракцион Самолет</a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Мини-колесо обозрения</a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Сумасшедшая волна</a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
                 </div>
               </article>
             </li>
@@ -1140,6 +1275,62 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Парковый аттракцион Самолет</a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Мини-колесо обозрения</a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Сумасшедшая волна</a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
+                </div>
+              </article>
+            </li>
+          </ul>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="products__content tabs-new__content">
+        <div class="products__slider slider-row swiper">
+          <ul class="products__slides swiper-wrapper">
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
                     <source srcset="img/products/1.webp" type="image/webp" />
                     <img src="img/products/1.jpg" alt="products" />
                   </picture>
@@ -1149,6 +1340,54 @@
                     <a href="#"> Аттракцион прыгающие машинки </a>
                   </h3>
                   <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Парковый аттракцион Самолет</a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Мини-колесо обозрения</a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Сумасшедшая волна</a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
                 </div>
               </article>
             </li>
@@ -1172,6 +1411,62 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Парковый аттракцион Самолет</a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Мини-колесо обозрения</a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Сумасшедшая волна</a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
+                </div>
+              </article>
+            </li>
+          </ul>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="products__content tabs-new__content">
+        <div class="products__slider slider-row swiper">
+          <ul class="products__slides swiper-wrapper">
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
                     <source srcset="img/products/1.webp" type="image/webp" />
                     <img src="img/products/1.jpg" alt="products" />
                   </picture>
@@ -1181,6 +1476,54 @@
                     <a href="#"> Аттракцион прыгающие машинки </a>
                   </h3>
                   <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Парковый аттракцион Самолет</a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Мини-колесо обозрения</a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Сумасшедшая волна</a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
                 </div>
               </article>
             </li>
@@ -1204,6 +1547,62 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Парковый аттракцион Самолет</a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Мини-колесо обозрения</a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Сумасшедшая волна</a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
+                </div>
+              </article>
+            </li>
+          </ul>
+
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="products__content tabs-new__content">
+        <div class="products__slider slider-row swiper">
+          <ul class="products__slides swiper-wrapper">
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
                     <source srcset="img/products/1.webp" type="image/webp" />
                     <img src="img/products/1.jpg" alt="products" />
                   </picture>
@@ -1213,6 +1612,54 @@
                     <a href="#"> Аттракцион прыгающие машинки </a>
                   </h3>
                   <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Парковый аттракцион Самолет</a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Мини-колесо обозрения</a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#">Аттракцион Сумасшедшая волна</a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
                 </div>
               </article>
             </li>
@@ -1236,15 +1683,15 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
                   <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
+                    <a href="#">Парковый аттракцион Самолет</a>
                   </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
+                  <span class="products-card__price">1 277 181 ₽</span>
                 </div>
               </article>
             </li>
@@ -1252,15 +1699,15 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
                   <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
+                    <a href="#">Аттракцион Мини-колесо обозрения</a>
                   </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
+                  <span class="products-card__price">2 922 181 ₽</span>
                 </div>
               </article>
             </li>
@@ -1268,15 +1715,15 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
                   <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
+                    <a href="#">Аттракцион Сумасшедшая волна</a>
                   </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
+                  <span class="products-card__price">6 319 227 ₽</span>
                 </div>
               </article>
             </li>
@@ -1549,18 +1996,51 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
                   <h3 class="products-card__title">
                     <a href="#"> Аттракцион прыгающие машинки </a>
                   </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
+                  <span class="products-card__price">1 277 181 ₽</span>
                 </div>
               </article>
             </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
+                </div>
+              </article>
+            </li>
+
             <li class="products__slide swiper-slide">
               <article class="products-card">
                 <a class="products-card__top" href="#">
@@ -1581,18 +2061,51 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
                   <h3 class="products-card__title">
                     <a href="#"> Аттракцион прыгающие машинки </a>
                   </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
+                  <span class="products-card__price">1 277 181 ₽</span>
                 </div>
               </article>
             </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
+                </div>
+              </article>
+            </li>
+
             <li class="products__slide swiper-slide">
               <article class="products-card">
                 <a class="products-card__top" href="#">
@@ -1613,18 +2126,51 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
                   <h3 class="products-card__title">
                     <a href="#"> Аттракцион прыгающие машинки </a>
                   </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
+                  <span class="products-card__price">1 277 181 ₽</span>
                 </div>
               </article>
             </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
+                </div>
+              </article>
+            </li>
+
             <li class="products__slide swiper-slide">
               <article class="products-card">
                 <a class="products-card__top" href="#">
@@ -1645,15 +2191,15 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
                   <h3 class="products-card__title">
                     <a href="#"> Аттракцион прыгающие машинки </a>
                   </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
+                  <span class="products-card__price">1 277 181 ₽</span>
                 </div>
               </article>
             </li>
@@ -1661,15 +2207,15 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
                   <h3 class="products-card__title">
                     <a href="#"> Аттракцион прыгающие машинки </a>
                   </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
+                  <span class="products-card__price">2 922 181 ₽</span>
                 </div>
               </article>
             </li>
@@ -1677,111 +2223,15 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
                   <h3 class="products-card__title">
                     <a href="#"> Аттракцион прыгающие машинки </a>
                   </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
+                  <span class="products-card__price">6 319 227 ₽</span>
                 </div>
               </article>
             </li>
@@ -1831,8 +2281,874 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
+                </div>
+              </article>
+            </li>
+
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
                     <source srcset="img/products/1.webp" type="image/webp" />
                     <img src="img/products/1.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
+                </div>
+              </article>
+            </li>
+
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/1.webp" type="image/webp" />
+                    <img src="img/products/1.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
+                </div>
+              </article>
+            </li>
+
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/1.webp" type="image/webp" />
+                    <img src="img/products/1.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
+                </div>
+              </article>
+            </li>
+          </ul>
+
+          <button
+            class="swiper-button-next"
+            type="button"
+            aria-label="Следующий"
+          ></button>
+          <button
+            class="swiper-button-prev"
+            type="button"
+            aria-label="Предыдущий"
+          ></button>
+        </div>
+
+        <button class="products__show-more" type="button">Показать еще</button>
+      </div>
+      <div class="products__content tabs-popular__content">
+        <div class="products__slider slider-grid swiper">
+          <ul class="products__slides swiper-wrapper">
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/1.webp" type="image/webp" />
+                    <img src="img/products/1.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
+                </div>
+              </article>
+            </li>
+
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/1.webp" type="image/webp" />
+                    <img src="img/products/1.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
+                </div>
+              </article>
+            </li>
+
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/1.webp" type="image/webp" />
+                    <img src="img/products/1.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
+                </div>
+              </article>
+            </li>
+
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/1.webp" type="image/webp" />
+                    <img src="img/products/1.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
+                </div>
+              </article>
+            </li>
+          </ul>
+
+          <button
+            class="swiper-button-next"
+            type="button"
+            aria-label="Следующий"
+          ></button>
+          <button
+            class="swiper-button-prev"
+            type="button"
+            aria-label="Предыдущий"
+          ></button>
+        </div>
+
+        <button class="products__show-more" type="button">Показать еще</button>
+      </div>
+      <div class="products__content tabs-popular__content">
+        <div class="products__slider slider-grid swiper">
+          <ul class="products__slides swiper-wrapper">
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/1.webp" type="image/webp" />
+                    <img src="img/products/1.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
+                </div>
+              </article>
+            </li>
+
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/1.webp" type="image/webp" />
+                    <img src="img/products/1.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
+                </div>
+              </article>
+            </li>
+
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/1.webp" type="image/webp" />
+                    <img src="img/products/1.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
+                </div>
+              </article>
+            </li>
+
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/1.webp" type="image/webp" />
+                    <img src="img/products/1.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">6 319 227 ₽</span>
+                </div>
+              </article>
+            </li>
+          </ul>
+
+          <button
+            class="swiper-button-next"
+            type="button"
+            aria-label="Следующий"
+          ></button>
+          <button
+            class="swiper-button-prev"
+            type="button"
+            aria-label="Предыдущий"
+          ></button>
+        </div>
+
+        <button class="products__show-more" type="button">Показать еще</button>
+      </div>
+      <div class="products__content tabs-popular__content">
+        <div class="products__slider slider-grid swiper">
+          <ul class="products__slides swiper-wrapper">
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/1.webp" type="image/webp" />
+                    <img src="img/products/1.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
@@ -1863,8 +3179,40 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
@@ -1895,8 +3243,40 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
@@ -1927,8 +3307,8 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
@@ -1943,8 +3323,8 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
@@ -1959,104 +3339,8 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
@@ -2106,8 +3390,40 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
@@ -2138,8 +3454,40 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
@@ -2170,8 +3518,40 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
@@ -2202,8 +3582,8 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
@@ -2218,8 +3598,8 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
@@ -2234,379 +3614,8 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-          </ul>
-
-          <button
-            class="swiper-button-next"
-            type="button"
-            aria-label="Следующий"
-          ></button>
-          <button
-            class="swiper-button-prev"
-            type="button"
-            aria-label="Предыдущий"
-          ></button>
-        </div>
-
-        <button class="products__show-more" type="button">Показать еще</button>
-      </div>
-      <div class="products__content tabs-popular__content">
-        <div class="products__slider slider-grid swiper">
-          <ul class="products__slides swiper-wrapper">
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
@@ -2656,8 +3665,40 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
@@ -2688,8 +3729,40 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
@@ -2720,8 +3793,40 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="products__slide swiper-slide">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
@@ -2752,8 +3857,8 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
@@ -2768,8 +3873,8 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
@@ -2784,654 +3889,8 @@
               <article class="products-card">
                 <a class="products-card__top" href="#">
                   <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-          </ul>
-
-          <button
-            class="swiper-button-next"
-            type="button"
-            aria-label="Следующий"
-          ></button>
-          <button
-            class="swiper-button-prev"
-            type="button"
-            aria-label="Предыдущий"
-          ></button>
-        </div>
-
-        <button class="products__show-more" type="button">Показать еще</button>
-      </div>
-      <div class="products__content tabs-popular__content">
-        <div class="products__slider slider-grid swiper">
-          <ul class="products__slides swiper-wrapper">
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-          </ul>
-
-          <button
-            class="swiper-button-next"
-            type="button"
-            aria-label="Следующий"
-          ></button>
-          <button
-            class="swiper-button-prev"
-            type="button"
-            aria-label="Предыдущий"
-          ></button>
-        </div>
-
-        <button class="products__show-more" type="button">Показать еще</button>
-      </div>
-      <div class="products__content tabs-popular__content">
-        <div class="products__slider slider-grid swiper">
-          <ul class="products__slides swiper-wrapper">
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
-                  </picture>
-                </a>
-                <div class="products-card__body">
-                  <h3 class="products-card__title">
-                    <a href="#"> Аттракцион прыгающие машинки </a>
-                  </h3>
-                  <span class="products-card__price">3 194 148 ₽</span>
-                </div>
-              </article>
-            </li>
-            <li class="products__slide swiper-slide">
-              <article class="products-card">
-                <a class="products-card__top" href="#">
-                  <picture>
-                    <source srcset="img/products/1.webp" type="image/webp" />
-                    <img src="img/products/1.jpg" alt="products" />
+                    <source srcset="img/products/4.webp" type="image/webp" />
+                    <img src="img/products/4.jpg" alt="products" />
                   </picture>
                 </a>
                 <div class="products-card__body">
@@ -3685,7 +4144,100 @@
   </div>
 </section>
 
-        
+        <section class="reviews">
+  <div class="container">
+    <h2 class="reviews__title">Отзывы наших клиентов</h2>
+
+    <div class="reviews__slider swiper">
+      <ul class="reviews__slides swiper-wrapper">
+        <li class="reviews__slide swiper-slide">
+          <div class="reviews-video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/ODPxZzJM8S4"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </li>
+        <li class="reviews__slide swiper-slide">
+          <div class="reviews-video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/ODPxZzJM8S4"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </li>
+        <li class="reviews__slide swiper-slide">
+          <div class="reviews-video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/ODPxZzJM8S4"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </li>
+        <li class="reviews__slide swiper-slide">
+          <div class="reviews-video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/ODPxZzJM8S4"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </li>
+        <li class="reviews__slide swiper-slide">
+          <div class="reviews-video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/ODPxZzJM8S4"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </li>
+        <li class="reviews__slide swiper-slide">
+          <div class="reviews-video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/ODPxZzJM8S4"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </li>
+      </ul>
+      <div class="swiper-pagination"></div>
+      <button
+        class="swiper-button-next"
+        type="button"
+        aria-label="Следующий"
+      ></button>
+      <button
+        class="swiper-button-prev"
+        type="button"
+        aria-label="Предыдущий"
+      ></button>
+    </div>
+  </div>
+</section>
+
         <section class="subscribe">
   <div class="container">
     <div class="subscribe__top">
@@ -3760,6 +4312,7 @@
     <div class="products__tabs tabs-popular">
       <div class="products__slider slider-bought-today swiper">
         <ul class="products__slides swiper-wrapper">
+         
           <li class="products__slide swiper-slide">
             <article class="products-card">
               <a class="products-card__top" href="#">
@@ -3780,18 +4333,51 @@
             <article class="products-card">
               <a class="products-card__top" href="#">
                 <picture>
-                  <source srcset="img/products/1.webp" type="image/webp" />
-                  <img src="img/products/1.jpg" alt="products" />
+                  <source srcset="img/products/2.webp" type="image/webp" />
+                  <img src="img/products/2.jpg" alt="products" />
                 </picture>
               </a>
               <div class="products-card__body">
                 <h3 class="products-card__title">
                   <a href="#"> Аттракцион прыгающие машинки </a>
                 </h3>
-                <span class="products-card__price">3 194 148 ₽</span>
+                <span class="products-card__price">1 277 181 ₽</span>
               </div>
             </article>
           </li>
+          <li class="products__slide swiper-slide">
+            <article class="products-card">
+              <a class="products-card__top" href="#">
+                <picture>
+                  <source srcset="img/products/3.webp" type="image/webp" />
+                  <img src="img/products/3.jpg" alt="products" />
+                </picture>
+              </a>
+              <div class="products-card__body">
+                <h3 class="products-card__title">
+                  <a href="#"> Аттракцион прыгающие машинки </a>
+                </h3>
+                <span class="products-card__price">2 922 181 ₽</span>
+              </div>
+            </article>
+          </li>
+          <li class="products__slide swiper-slide">
+            <article class="products-card">
+              <a class="products-card__top" href="#">
+                <picture>
+                  <source srcset="img/products/4.webp" type="image/webp" />
+                  <img src="img/products/4.jpg" alt="products" />
+                </picture>
+              </a>
+              <div class="products-card__body">
+                <h3 class="products-card__title">
+                  <a href="#"> Аттракцион прыгающие машинки </a>
+                </h3>
+                <span class="products-card__price">6 319 227 ₽</span>
+              </div>
+            </article>
+          </li>
+
           <li class="products__slide swiper-slide">
             <article class="products-card">
               <a class="products-card__top" href="#">
@@ -3812,15 +4398,15 @@
             <article class="products-card">
               <a class="products-card__top" href="#">
                 <picture>
-                  <source srcset="img/products/1.webp" type="image/webp" />
-                  <img src="img/products/1.jpg" alt="products" />
+                  <source srcset="img/products/2.webp" type="image/webp" />
+                  <img src="img/products/2.jpg" alt="products" />
                 </picture>
               </a>
               <div class="products-card__body">
                 <h3 class="products-card__title">
                   <a href="#"> Аттракцион прыгающие машинки </a>
                 </h3>
-                <span class="products-card__price">3 194 148 ₽</span>
+                <span class="products-card__price">1 277 181 ₽</span>
               </div>
             </article>
           </li>
@@ -3828,15 +4414,15 @@
             <article class="products-card">
               <a class="products-card__top" href="#">
                 <picture>
-                  <source srcset="img/products/1.webp" type="image/webp" />
-                  <img src="img/products/1.jpg" alt="products" />
+                  <source srcset="img/products/3.webp" type="image/webp" />
+                  <img src="img/products/3.jpg" alt="products" />
                 </picture>
               </a>
               <div class="products-card__body">
                 <h3 class="products-card__title">
                   <a href="#"> Аттракцион прыгающие машинки </a>
                 </h3>
-                <span class="products-card__price">3 194 148 ₽</span>
+                <span class="products-card__price">2 922 181 ₽</span>
               </div>
             </article>
           </li>
@@ -3844,175 +4430,15 @@
             <article class="products-card">
               <a class="products-card__top" href="#">
                 <picture>
-                  <source srcset="img/products/1.webp" type="image/webp" />
-                  <img src="img/products/1.jpg" alt="products" />
+                  <source srcset="img/products/4.webp" type="image/webp" />
+                  <img src="img/products/4.jpg" alt="products" />
                 </picture>
               </a>
               <div class="products-card__body">
                 <h3 class="products-card__title">
                   <a href="#"> Аттракцион прыгающие машинки </a>
                 </h3>
-                <span class="products-card__price">3 194 148 ₽</span>
-              </div>
-            </article>
-          </li>
-          <li class="products__slide swiper-slide">
-            <article class="products-card">
-              <a class="products-card__top" href="#">
-                <picture>
-                  <source srcset="img/products/1.webp" type="image/webp" />
-                  <img src="img/products/1.jpg" alt="products" />
-                </picture>
-              </a>
-              <div class="products-card__body">
-                <h3 class="products-card__title">
-                  <a href="#"> Аттракцион прыгающие машинки </a>
-                </h3>
-                <span class="products-card__price">3 194 148 ₽</span>
-              </div>
-            </article>
-          </li>
-          <li class="products__slide swiper-slide">
-            <article class="products-card">
-              <a class="products-card__top" href="#">
-                <picture>
-                  <source srcset="img/products/1.webp" type="image/webp" />
-                  <img src="img/products/1.jpg" alt="products" />
-                </picture>
-              </a>
-              <div class="products-card__body">
-                <h3 class="products-card__title">
-                  <a href="#"> Аттракцион прыгающие машинки </a>
-                </h3>
-                <span class="products-card__price">3 194 148 ₽</span>
-              </div>
-            </article>
-          </li>
-          <li class="products__slide swiper-slide">
-            <article class="products-card">
-              <a class="products-card__top" href="#">
-                <picture>
-                  <source srcset="img/products/1.webp" type="image/webp" />
-                  <img src="img/products/1.jpg" alt="products" />
-                </picture>
-              </a>
-              <div class="products-card__body">
-                <h3 class="products-card__title">
-                  <a href="#"> Аттракцион прыгающие машинки </a>
-                </h3>
-                <span class="products-card__price">3 194 148 ₽</span>
-              </div>
-            </article>
-          </li>
-          <li class="products__slide swiper-slide">
-            <article class="products-card">
-              <a class="products-card__top" href="#">
-                <picture>
-                  <source srcset="img/products/1.webp" type="image/webp" />
-                  <img src="img/products/1.jpg" alt="products" />
-                </picture>
-              </a>
-              <div class="products-card__body">
-                <h3 class="products-card__title">
-                  <a href="#"> Аттракцион прыгающие машинки </a>
-                </h3>
-                <span class="products-card__price">3 194 148 ₽</span>
-              </div>
-            </article>
-          </li>
-          <li class="products__slide swiper-slide">
-            <article class="products-card">
-              <a class="products-card__top" href="#">
-                <picture>
-                  <source srcset="img/products/1.webp" type="image/webp" />
-                  <img src="img/products/1.jpg" alt="products" />
-                </picture>
-              </a>
-              <div class="products-card__body">
-                <h3 class="products-card__title">
-                  <a href="#"> Аттракцион прыгающие машинки </a>
-                </h3>
-                <span class="products-card__price">3 194 148 ₽</span>
-              </div>
-            </article>
-          </li>
-          <li class="products__slide swiper-slide">
-            <article class="products-card">
-              <a class="products-card__top" href="#">
-                <picture>
-                  <source srcset="img/products/1.webp" type="image/webp" />
-                  <img src="img/products/1.jpg" alt="products" />
-                </picture>
-              </a>
-              <div class="products-card__body">
-                <h3 class="products-card__title">
-                  <a href="#"> Аттракцион прыгающие машинки </a>
-                </h3>
-                <span class="products-card__price">3 194 148 ₽</span>
-              </div>
-            </article>
-          </li>
-          <li class="products__slide swiper-slide">
-            <article class="products-card">
-              <a class="products-card__top" href="#">
-                <picture>
-                  <source srcset="img/products/1.webp" type="image/webp" />
-                  <img src="img/products/1.jpg" alt="products" />
-                </picture>
-              </a>
-              <div class="products-card__body">
-                <h3 class="products-card__title">
-                  <a href="#"> Аттракцион прыгающие машинки </a>
-                </h3>
-                <span class="products-card__price">3 194 148 ₽</span>
-              </div>
-            </article>
-          </li>
-          <li class="products__slide swiper-slide">
-            <article class="products-card">
-              <a class="products-card__top" href="#">
-                <picture>
-                  <source srcset="img/products/1.webp" type="image/webp" />
-                  <img src="img/products/1.jpg" alt="products" />
-                </picture>
-              </a>
-              <div class="products-card__body">
-                <h3 class="products-card__title">
-                  <a href="#"> Аттракцион прыгающие машинки </a>
-                </h3>
-                <span class="products-card__price">3 194 148 ₽</span>
-              </div>
-            </article>
-          </li>
-          <li class="products__slide swiper-slide">
-            <article class="products-card">
-              <a class="products-card__top" href="#">
-                <picture>
-                  <source srcset="img/products/1.webp" type="image/webp" />
-                  <img src="img/products/1.jpg" alt="products" />
-                </picture>
-              </a>
-              <div class="products-card__body">
-                <h3 class="products-card__title">
-                  <a href="#"> Аттракцион прыгающие машинки </a>
-                </h3>
-                <span class="products-card__price">3 194 148 ₽</span>
-              </div>
-            </article>
-          </li>
-          <li class="products__slide swiper-slide">
-            <article class="products-card">
-              <a class="products-card__top" href="#">
-                <picture>
-                  <source srcset="img/products/1.webp" type="image/webp" />
-                  <img src="img/products/1.jpg" alt="products" />
-                </picture>
-              </a>
-              <div class="products-card__body">
-                <h3 class="products-card__title">
-                  <a href="#"> Аттракцион прыгающие машинки </a>
-                </h3>
-                <span class="products-card__price">3 194 148 ₽</span>
+                <span class="products-card__price">6 319 227 ₽</span>
               </div>
             </article>
           </li>
@@ -4033,7 +4459,6 @@
   </div>
 </section>
 
-        
       </main>
       <footer class="footer">
   <div class="container">
@@ -4242,11 +4667,3 @@
 
   </body>
 </html>
-
-<!-- <label class="checkbox">
-  <input class="checkbox__input" type="checkbox" required />
-  <span class="checkbox__box"></span>
-  <span class="checkbox__text">
-    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
-  </span> 
-</label> -->

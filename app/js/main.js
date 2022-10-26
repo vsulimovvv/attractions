@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
-  //   // * ===== Mask input
-  //   $('input[type="tel"]').mask('+7 (999) 999-99-99');
+  // * ===== Mask input
+  $('input[type="tel"]').mask('+7 (999) 999-99-99');
 
   //   // * ===== Nice Select
   //   // $('select').niceSelect();
@@ -191,7 +191,7 @@ window.addEventListener('DOMContentLoaded', () => {
       if (el) {
         new Swiper(el, {
           slidesPerView: 1,
-        
+
           navigation: {
             nextEl: '.product__slider .swiper-button-next',
             prevEl: '.product__slider .swiper-button-prev',
@@ -394,7 +394,6 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   })();
 
-  
   // * ===== Show Filters
   (function showFilters() {
     const menuBtn = document.querySelector('.categories__filter');
@@ -417,66 +416,66 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   })();
 
-  //   // * ===== Show Menu
-  //   (function showMenu() {
-  //     const menuBtn = document.querySelector('.header__toggle');
-  //     const menu = document.querySelector('.mobile-menu');
-  //     const menuCloseBtn = document.querySelector('.mobile-menu__close');
-  //     const body = document.querySelector('body');
-  //     const overlay = document.querySelector('.overlay');
+  // * ===== Show Menu
+  (function showMenu() {
+    const menuBtn = document.querySelector('.header__toggle');
+    const menu = document.querySelector('.mobile-menu');
+    const menuCloseBtn = document.querySelector('.mobile-menu__close');
+    const body = document.querySelector('body');
+    const overlay = document.querySelector('.overlay');
 
-  //     menuBtn.addEventListener('click', (e) => {
-  //       menu.classList.toggle('active');
-  //       overlay.classList.toggle('active');
-  //       body.classList.toggle('no-scroll');
-  //     });
+    menuBtn.addEventListener('click', (e) => {
+      menu.classList.toggle('active');
+      overlay.classList.toggle('active');
+      body.classList.toggle('no-scroll');
+    });
 
-  //     overlay.addEventListener('click', (e) => {
-  //       menu.classList.remove('active');
-  //       overlay.classList.remove('active');
-  //       body.classList.remove('no-scroll');
-  //     });
+    overlay.addEventListener('click', (e) => {
+      menu.classList.remove('active');
+      overlay.classList.remove('active');
+      body.classList.remove('no-scroll');
+    });
 
-  //     menuCloseBtn.addEventListener('click', (e) => {
-  //       menu.classList.remove('active');
-  //       overlay.classList.remove('active');
-  //       body.classList.remove('no-scroll');
-  //     });
-  //   })();
+    menuCloseBtn.addEventListener('click', (e) => {
+      menu.classList.remove('active');
+      overlay.classList.remove('active');
+      body.classList.remove('no-scroll');
+    });
+  })();
 
-  //   // * ===== Modal
-  //   (function modals() {
-  //     function bindModal(openBtn, modal, close) {
-  //       const openBtnEl = document.querySelectorAll(openBtn);
-  //       const modalEl = document.querySelector(modal);
-  //       const closeEl = document.querySelectorAll(close);
-  //       const body = document.querySelector('body');
-  //       if (modalEl) {
-  //         openBtnEl.forEach((el) => {
-  //           el.addEventListener('click', (e) => {
-  //             if (e.target) {
-  //               e.preventDefault();
-  //             }
-  //             modalEl.classList.add('active');
-  //             body.classList.add('no-scroll');
-  //           });
-  //         });
-  //         closeEl.forEach((btn) => {
-  //           btn.addEventListener('click', (e) => {
-  //             modalEl.classList.remove('active');
-  //             body.classList.remove('no-scroll');
-  //           });
-  //         });
-  //         modalEl.addEventListener('click', (e) => {
-  //           if (e.target === modalEl) {
-  //             modalEl.classList.remove('active');
-  //             body.classList.remove('no-scroll');
-  //           }
-  //         });
-  //       }
-  //     }
-  //     bindModal('.online-booking-btn', '.popup--online-booking', '.popup__close');
-  //   })();
+  // * ===== Modal
+  (function modals() {
+    function bindModal(openBtn, modal, close) {
+      const openBtnEl = document.querySelectorAll(openBtn);
+      const modalEl = document.querySelector(modal);
+      const closeEl = document.querySelectorAll(close);
+      const body = document.querySelector('body');
+      if (modalEl) {
+        openBtnEl.forEach((el) => {
+          el.addEventListener('click', (e) => {
+            if (e.target) {
+              e.preventDefault();
+            }
+            modalEl.classList.add('active');
+            body.classList.add('no-scroll');
+          });
+        });
+        closeEl.forEach((btn) => {
+          btn.addEventListener('click', (e) => {
+            modalEl.classList.remove('active');
+            body.classList.remove('no-scroll');
+          });
+        });
+        modalEl.addEventListener('click', (e) => {
+          if (e.target === modalEl) {
+            modalEl.classList.remove('active');
+            body.classList.remove('no-scroll');
+          }
+        });
+      }
+    }
+    bindModal('.btn-callback', '.popup--callback', '.popup__close');
+  })();
 
   function someTabs(headerSelector, tabSelector, contentSelector, activeClass) {
     const header = document.querySelectorAll(headerSelector);
@@ -516,10 +515,15 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
- 
-  // someTabs('.tabs-new', '.tabs-new__btn', '.tabs-new__content', 'active');
-  someTabs('.product-tab', '.product-tab__btn', '.product-tab__content', 'active');
-   someTabs(
+
+  someTabs('.tabs-new', '.tabs-new__btn', '.tabs-new__content', 'active');
+  someTabs(
+    '.product-tab',
+    '.product-tab__btn',
+    '.product-tab__content',
+    'active'
+  );
+  someTabs(
     '.tabs-popular',
     '.tabs-popular__btn',
     '.tabs-popular__content',
