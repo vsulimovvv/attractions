@@ -516,12 +516,13 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-  someTabs(
+ 
+  // someTabs('.tabs-new', '.tabs-new__btn', '.tabs-new__content', 'active');
+  someTabs('.product-tab', '.product-tab__btn', '.product-tab__content', 'active');
+   someTabs(
     '.tabs-popular',
     '.tabs-popular__btn',
     '.tabs-popular__content',
     'active'
   );
-  someTabs('.tabs-new', '.tabs-new__btn', '.tabs-new__content', 'active');
-  someTabs('.product-tab', '.product-tab__btn', '.product-tab__content', 'active');
 });
