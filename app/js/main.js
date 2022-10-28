@@ -43,6 +43,20 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   })();
 
+  // * ==== showSearch
+  (function showSearch() {
+    const btn = document.querySelector('.btn-search');
+    const formSearch = document.querySelector('.form-search');
+    const btnClose = document.querySelector('.form-search__close');
+
+    btn.addEventListener('click', (e) => {
+      formSearch.classList.toggle('active');
+    });
+    btnClose.addEventListener('click', (e) => {
+      formSearch.classList.remove('active');
+    });
+  })();
+
   // * ===== Slider
   (function slider() {
     const sliderEl = document.querySelectorAll('.slider-grid');
