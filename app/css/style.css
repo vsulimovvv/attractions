@@ -583,23 +583,25 @@ body.no-scroll {
   height: 50%;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) rotate(90deg);
-      -ms-transform: translate(-50%, -50%) rotate(90deg);
-          transform: translate(-50%, -50%) rotate(90deg);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   border-radius: 50%;
   background-color: var(--color-dark);
-  -webkit-mask: url("../img/icons/chevron.svg") no-repeat center/contain;
-          mask: url("../img/icons/chevron.svg") no-repeat center/contain;
 }
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
   background-color: #eeeeee;
 }
 
+.swiper-button-prev::after {
+  -webkit-mask: url("../img/icons/slider-arrow-left.svg") no-repeat center/contain;
+          mask: url("../img/icons/slider-arrow-left.svg") no-repeat center/contain;
+}
+
 .swiper-button-next::after {
-  -webkit-transform: translate(-50%, -50%) rotate(-90deg);
-      -ms-transform: translate(-50%, -50%) rotate(-90deg);
-          transform: translate(-50%, -50%) rotate(-90deg);
+  -webkit-mask: url("../img/icons/slider-arrow-right.svg") no-repeat center/contain;
+          mask: url("../img/icons/slider-arrow-right.svg") no-repeat center/contain;
 }
 
 .swiper-pagination-bullet {
