@@ -198,20 +198,34 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     });
   })();
-  // * ===== Slider
-  (function slider() {
-    const sliderEl = document.querySelectorAll('.product__slider');
-    sliderEl.forEach((el) => {
-      if (el) {
-        new Swiper(el, {
-          slidesPerView: 1,
 
-          navigation: {
-            nextEl: '.product__slider .swiper-button-next',
-            prevEl: '.product__slider .swiper-button-prev',
-          },
-        });
-      }
+   // * ==== Single Product
+   (function verticalSlider() {
+    let mySwiperNav = new Swiper('#slider-nav', {
+      slidesPerView: 'auto',
+      spaceBetween: 12,
+      direction: 'horizontal',
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+      navigation: {
+        nextEl: document.querySelector(
+          '.slider-thumbs__nav-control .swiper-button-next'
+        ),
+        prevEl: document.querySelector(
+          '.slider-thumbs__nav-control .swiper-button-prev'
+        ),
+      },
+    });
+
+    let mySwiper = new Swiper('#slider-main', {
+      spaceBetween: 10,
+      thumbs: {
+        swiper: mySwiperNav,
+      },
+      navigation: {
+        nextEl: document.querySelector('#slider-main .swiper-button-next'),
+        prevEl: document.querySelector('#slider-main .swiper-button-prev'),
+      },
     });
   })();
 

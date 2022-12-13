@@ -157,41 +157,136 @@
         <h1 class="product__title">Бамперная одноместная машинка КМ-7</h1>
 
         <div class="product__wrapper">
-          <div class="product__slider swiper">
-            <ul class="product__slides swiper-wrapper">
-              <li class="product__slide swiper-slide">
-                <picture>
-                  <source srcset="img/product.webp" type="image/webp" />
-                  <img src="img/product.jpg" alt="product" />
-                </picture>
-              </li>
-              <li class="product__slide swiper-slide">
-                <picture>
-                  <source srcset="img/product.webp" type="image/webp" />
-                  <img src="img/product.jpg" alt="product" />
-                </picture>
-              </li>
-              <li class="product__slide swiper-slide">
-                <picture>
-                  <source srcset="img/product.webp" type="image/webp" />
-                  <img src="img/product.jpg" alt="product" />
-                </picture>
-              </li>
-            </ul>
+          <div class="product__slider">
+            <div class="slider-thumbs">
+              <div class="slider-thumbs__main swiper" id="slider-main">
+                <ul class="swiper-wrapper">
+                  <li
+                    class="swiper-slide"
+                    data-fancybox="product"
+                    href="img/product.jpg"
+                  >
+                    <img src="img/product.jpg" alt="Слайд №1" />
+                  </li>
+                  <li
+                    class="swiper-slide"
+                    data-fancybox="product"
+                    href="img/product.jpg"
+                  >
+                    <img src="img/product.jpg" alt="Слайд №1" />
+                  </li>
+                  <li
+                    class="swiper-slide"
+                    data-fancybox="product"
+                    href="img/product.jpg"
+                  >
+                    <img
+                      src="img/product.jpg  "
+                      data-fancybox="product"
+                      href="img/product.jpg"
+                      alt="Слайд №1"
+                    />
+                  </li>
+                  <li class="swiper-slide">
+                    <img
+                      src="img/product.jpg  "
+                      data-fancybox="product"
+                      href="img/product.jpg"
+                      alt="Слайд №1"
+                    />
+                  </li>
+                  <li class="swiper-slide">
+                    <img
+                      src="img/product.jpg  "
+                      data-fancybox="product"
+                      href="img/product.jpg"
+                      alt="Слайд №1"
+                    />
+                  </li>
+                  <li class="swiper-slide">
+                    <img
+                      src="img/product.jpg  "
+                      data-fancybox="product"
+                      href="img/product.jpg"
+                      alt="Слайд №1"
+                    />
+                  </li>
+                  <li class="swiper-slide">
+                    <img
+                      src="img/product.jpg  "
+                      data-fancybox="product"
+                      href="img/product.jpg"
+                      alt="Слайд №1"
+                    />
+                  </li>
+                  <li class="swiper-slide">
+                    <img
+                      src="img/product.jpg  "
+                      data-fancybox="product"
+                      href="img/product.jpg"
+                      alt="Слайд №1"
+                    />
+                  </li>
+                </ul>
 
-            <div class="product__actions">
-              <button
-                class="swiper-button-prev"
-                type="button"
-                aria-label="Предыдущий"
-              ></button>
-              <button
-                class="swiper-button-next"
-                type="button"
-                aria-label="Следующий"
-              ></button>
+                <button
+                  class="swiper-button-prev"
+                  type="button"
+                  aria-label="Следующий"
+                ></button>
+                <button
+                  class="swiper-button-next"
+                  type="button"
+                  aria-label="Предыдущий"
+                ></button>
+              </div>
+
+              <div class="slider-thumbs__nav">
+                <div class="slider-thumbs__nav-wrap swiper" id="slider-nav">
+                  <ul class="swiper-wrapper">
+                    <li class="swiper-slide slider-nav__slide">
+                      <img src="img/product.jpg" alt="Слайд №1" />
+                    </li>
+                    <li class="swiper-slide slider-nav__slide">
+                      <img src="img/product.jpg" alt="Слайд №1" />
+                    </li>
+                    <li class="swiper-slide slider-nav__slide">
+                      <img src="img/product.jpg" alt="Слайд №1" />
+                    </li>
+                    <li class="swiper-slide slider-nav__slide">
+                      <img src="img/product.jpg" alt="Слайд №1" />
+                    </li>
+                    <li class="swiper-slide slider-nav__slide">
+                      <img src="img/product.jpg" alt="Слайд №1" />
+                    </li>
+                    <li class="swiper-slide slider-nav__slide">
+                      <img src="img/product.jpg" alt="Слайд №1" />
+                    </li>
+                    <li class="swiper-slide slider-nav__slide">
+                      <img src="img/product.jpg" alt="Слайд №1" />
+                    </li>
+                    <li class="swiper-slide slider-nav__slide">
+                      <img src="img/product.jpg" alt="Слайд №1" />
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="slider-thumbs__nav-control">
+                  <button
+                    class="swiper-button-prev"
+                    type="button"
+                    aria-label="Следующий"
+                  ></button>
+                  <button
+                    class="swiper-button-next"
+                    type="button"
+                    aria-label="Предыдущий"
+                  ></button>
+                </div>
+              </div>
             </div>
           </div>
+
           <div class="product__info">
             <span class="product__price">119 000 ₽</span>
             <button class="product__btn btn" type="button">Купить</button>
