@@ -1,0 +1,413 @@
+<div class="grid-relative grid-relative--left-static">
+  <div class="container">
+    <div class="grid-relative__wrapper">
+      <div class="grid-relative__left">
+        <form class="categories__filters filters">
+          <div class="filters__inner">
+            <div class="filters__box accordion">
+              <button class="filters__control accordion-control" type="button">
+                <span>Тематика аттракционов</span>
+              </button>
+              <div class="filters__content accordion-content">
+                <div class="filters__wrap">
+                  <ul
+                    class="filters__list"
+                    data-simplebar
+                    data-simplebar-auto-hide
+                  >
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Цирк</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Мультфильмы</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Животные</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Природа</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Океан</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Транспорт</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Цирк</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Мультфильмы</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Животные</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Природа</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Океан</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Транспорт</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="filters__box accordion">
+              <button class="filters__control accordion-control" type="button">
+                <span>Цена</span>
+              </button>
+              <div class="filters__content accordion-content">
+                <div class="filters__wrap">
+                  <div class="range-slider range-slider--price">
+                    <div class="range-slider__range" id="slider-price"></div>
+                    <div class="range-slider__values">
+                      <input
+                        class="range-slider__min"
+                        type="text"
+                        placeholder="От 10 000"
+                      />
+                      <span>-</span>
+                      <input
+                        class="range-slider__max"
+                        type="text"
+                        placeholder="До 100 млн"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filters__box accordion">
+              <button class="filters__control accordion-control" type="button">
+                <span>Длина, м.</span>
+              </button>
+              <div class="filters__content accordion-content">
+                <div class="filters__wrap">
+                  <div class="range-slider range-slider--length">
+                    <div class="range-slider__range" id="slider-length"></div>
+                    <div class="range-slider__values">
+                      <input
+                        class="range-slider__min"
+                        type="text"
+                        placeholder="4"
+                      />
+                      <span>-</span>
+                      <input
+                        class="range-slider__max"
+                        type="text"
+                        placeholder="30"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filters__box accordion">
+              <button class="filters__control accordion-control" type="button">
+                <span>Ширина, м.</span>
+              </button>
+              <div class="filters__content accordion-content">
+                <div class="filters__wrap">
+                  <div class="range-slider range-slider--width">
+                    <div class="range-slider__range" id="slider-width"></div>
+                    <div class="range-slider__values">
+                      <input
+                        class="range-slider__min"
+                        type="text"
+                        placeholder="4"
+                      />
+                      <span>-</span>
+                      <input
+                        class="range-slider__max"
+                        type="text"
+                        placeholder="30"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filters__box accordion">
+              <button class="filters__control accordion-control" type="button">
+                <span>Общая высота, м.</span>
+              </button>
+              <div class="filters__content accordion-content">
+                <div class="filters__wrap">
+                  <div class="range-slider range-slider--height">
+                    <div class="range-slider__range" id="slider-height"></div>
+                    <div class="range-slider__values">
+                      <input
+                        class="range-slider__min"
+                        type="text"
+                        placeholder="4"
+                      />
+                      <span>-</span>
+                      <input
+                        class="range-slider__max"
+                        type="text"
+                        placeholder="12"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filters__box">
+              <button class="filters__btn" type="reset">Сбросить фильтр</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="grid-relative__right">
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Каталог</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Карусели</a>
+            </li>
+          </ul>
+        </div>
+        <section class="categories">
+          <div class="categories__top">
+            <h1 class="categories__title">Карусели</h1>
+
+            <button
+              class="categories__filter"
+              type="button"
+              aria-label="Фильтры"
+            ></button>
+          </div>
+
+          <ul class="categories__list">
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/1.webp" type="image/webp" />
+                    <img src="img/products/1.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/1.webp" type="image/webp" />
+                    <img src="img/products/1.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/1.webp" type="image/webp" />
+                    <img src="img/products/1.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+          </ul>
+
+          <div class="categories__pagination pagination">
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <button class="pagination__btn active" type="button">1</button>
+              </li>
+              <li class="pagination__item">
+                <button class="pagination__btn" type="button">2</button>
+              </li>
+              <li class="pagination__item">
+                <button class="pagination__btn" type="button">3</button>
+              </li>
+              <li class="pagination__item">
+                <button class="pagination__btn" type="button">4</button>
+              </li>
+              <li class="pagination__item">
+                <button class="pagination__btn" type="button">5</button>
+              </li>
+              <li class="pagination__item">
+                <span class="pagination__dots" type="button"> ... </span>
+              </li>
+              <li class="pagination__item">
+                <button class="pagination__btn" type="button">346</button>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>

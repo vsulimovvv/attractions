@@ -1,0 +1,72 @@
+.socials {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 11px;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    background-color: #ebebeb;
+    position: relative;
+    transition: 200ms ease;
+
+    &:hover {
+      background-color: var(--color-purple);
+
+      &::after {
+        background-color: var(--color-white);
+      }
+    }
+
+    &::after {
+      @include elDef();
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: var(--color-black);
+      transition: 200ms ease;
+    }
+
+    &--fb {
+      &::after {
+        @include maskImage(url('../img/socials/facebook.svg'), contain);
+      }
+    }
+
+    &--vk {
+      &::after {
+        @include maskImage(url('../img/socials/vk.svg'), contain);
+      }
+    }
+
+    &--inst {
+      &::after {
+        @include maskImage(url('../img/socials/instagram.svg'), contain);
+      }
+    }
+
+    &--tw {
+      &::after {
+        @include maskImage(url('../img/socials/twitter.svg'), contain);
+      }
+    }
+
+    &--yb {
+      &::after {
+        @include maskImage(url('../img/socials/youtube.svg'), contain);
+      }
+    }
+  }
+}

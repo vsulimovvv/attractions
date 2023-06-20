@@ -1,0 +1,109 @@
+.news-top {
+  max-width: 950px;
+  margin: 0 auto;
+
+  @include breakpointsMaxW($bp-991) {
+    padding: 0 15px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__title {
+    font-weight: 400;
+    @include adaptive-value('font-size', 25, 20, 1);
+    @include adaptive-value('margin-bottom', 30, 20, 1);
+  }
+
+  &__text {
+    line-height: 1.6;
+    @include adaptive-value('margin-bottom', 70, 40, 1);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    gap: 30px;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 20px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .news-card {
+      background-color: #f8f8f8;
+    }
+  }
+
+  &__item {
+    .news-card {
+      &__top {
+        height: 200px;
+
+        @include breakpointsMaxW($bp-576) {
+          height: 150px;
+        }
+      }
+    }
+    &:first-child {
+      .news-card {
+        min-height: 315px;
+        flex-direction: row;
+        align-items: center;
+
+        @include breakpointsMaxW($bp-768) {
+          flex-direction: column;
+          text-align: left;
+        }
+
+        &__date {
+          margin-bottom: 20px;
+          font-size: 12px;
+        }
+
+        &__body {
+          height: 100%;
+        }
+
+        &__title {
+          margin-bottom: 20px;
+          @include adaptive-value('font-size', 19, 16, 1);
+
+          @include breakpointsMaxW($bp-768) {
+            font-size: 14px;
+          }
+        }
+
+        &__top {
+          height: 100%;
+          max-width: 275px;
+
+          @include breakpointsMaxW($bp-768) {
+            height: 200px;
+            max-width: 100%;
+          }
+
+          @include breakpointsMaxW($bp-576) {
+            height: 150px;
+            max-width: 100%;
+          }
+        }
+
+        &__text {
+          font-size: 13px;
+          color: #23262d;
+
+          @include breakpointsMaxW($bp-768) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

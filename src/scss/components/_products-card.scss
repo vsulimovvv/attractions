@@ -1,0 +1,44 @@
+.products-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-black);
+  max-width: 285px;
+
+  &__top {
+    width: 100%;
+    margin-bottom: 20px;
+    transition: 500ms ease;
+    @include adaptive-value('height', 390, 300, 1);
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    img {
+      @include img(cover);
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+    a {
+      transition: 200ms ease;
+      color: inherit;
+    }
+
+    &:hover {
+      color: var(--color-purple);
+    }
+  }
+
+  &__price {
+    font-size: 17px;
+    line-height: 1;
+    font-weight: 700;
+  }
+}

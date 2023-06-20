@@ -1,0 +1,108 @@
+.grid-relative {
+  margin-top: 100px;
+  padding-bottom: 80px;
+
+  @include breakpointsMaxW($bp-991) {
+    margin-top: 0 !important;
+  }
+
+  &--pb {
+    @include breakpointsMaxW($bp-991) {
+      padding-bottom: 0 !important;
+    }
+  }
+
+  &__left {
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    height: 700px;
+    z-index: 1;
+    background-color: #f9f9f9;
+
+    padding-top: 90px;
+    right: max(250px, calc((100% + 750px) / 2));
+
+    @include breakpointsMaxW($bp-container) {
+      width: 250px;
+      left: 15px;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      display: none;
+    }
+  }
+
+  &__right {
+    margin-left: 290px;
+
+    @include breakpointsMaxW($bp-container) {
+      margin-left: 280px;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+}
+
+.catalog {
+  &__title {
+    font-weight: 400;
+    @include adaptive-value('font-size', 25, 20, 1);
+    @include adaptive-value('margin-bottom', 30, 20, 1);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 30px 20px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px 10px;
+    }
+
+    @include breakpointsMaxW($bp-360) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .catalog-card {
+    max-width: 290px;
+    width: 100%;
+    padding: 50px 20px;
+    margin: 0 auto;
+    @include adaptive-value('padding-top', 50, 20, 1);
+    @include adaptive-value('padding-bottom', 50, 20, 1);
+
+    @include breakpointsMaxW($bp-576) {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    &__top {
+      @include adaptive-value('width', 137, 100, 1);
+      @include adaptive-value('height', 137, 100, 1);
+    }
+
+    &__btn {
+      width: 185px;
+
+      @include breakpointsMaxW($bp-container) {
+        width: auto;
+        min-width: auto;
+      }
+
+      @include breakpointsMaxW($bp-576) {
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+    }
+  }
+}

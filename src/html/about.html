@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./components/base/_meta.html')
+    @include('./components/base/_links.html')
+  </head>
+
+  <body>
+    @include('./components/_popups.html')
+
+    <div class="site-wrapper">
+      @include('./components/_header-white.html')
+
+      <main class="main">
+        @include('./components/_top-about.html')
+        @include('./components/_advantages-pt.html')
+        @include('./components/_about-section-reverse.html')
+        @include('./components/_team.html')
+        @include('./components/_reviews.html')
+        @include('./components/_news.html')
+        @include('./components/_subscribe.html')
+      </main>
+      @include('./components/_footer.html')
+    </div>
+
+    @include('./components/base/_scripts.html')
+  </body>
+</html>

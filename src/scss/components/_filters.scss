@@ -1,0 +1,56 @@
+.filters {
+  &__inner {
+    background-color: #f9f9f9;
+    padding: 40px 25px 60px 0;
+  }
+
+  &__box {
+    width: 220px;
+    margin-left: auto;
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid #ebebeb;
+    }
+  }
+
+  &__control {
+    font-weight: 700;
+  }
+
+  &__wrap {
+    margin-top: 30px;
+  }
+
+  &__list {
+    max-height: 220px;
+    overflow-y: auto;
+  }
+
+  .simplebar-scrollbar::before {
+    background-color: #bababa;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__btn {
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 700;
+    color: #c4c4c4;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 14px 35px;
+    transition: 200ms linear;
+
+    &:hover {
+      background-color: var(--color-dark);
+      color: var(--color-white);
+    }
+  }
+}

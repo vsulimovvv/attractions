@@ -1,0 +1,208 @@
+.products {
+  @include adaptive-value('padding-top', 70, 40, 1);
+  @include adaptive-value('padding-bottom', 90, 40, 1);
+
+  &__title {
+    text-align: center;
+    @include adaptive-value('font-size', 27, 20, 1);
+    @include adaptive-value('margin-bottom', 60, 40, 1);
+  }
+
+  &__top {
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    @include breakpointsMaxW($bp-768) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &-inner {
+      margin-right: 50px;
+      overflow-x: auto;
+
+      @include breakpointsMaxW($bp-991) {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+
+    &-list {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+      width: 100%;
+    }
+
+    &-item {
+      flex-shrink: 0;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+
+    &-btn {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 15px;
+      line-height: 1;
+      font-weight: 400;
+      color: #4a4a4a;
+      transition: 200ms ease;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 20px;
+
+      &:hover {
+        color: var(--color-purple);
+      }
+
+      &.active {
+        color: var(--color-purple);
+        border-bottom-color: var(--color-purple);
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @include breakpointsMaxW($bp-768) {
+      justify-content: space-between;
+    }
+  }
+
+  &__link {
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 500;
+    color: var(--color-purple);
+    border-bottom: 1px solid transparent;
+    flex-shrink: 0;
+    transition: 200ms ease;
+
+    &:hover {
+      border-bottom-color: var(--color-purple);
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @include breakpointsMaxW($bp-991) {
+        display: block;
+      }
+    }
+  }
+
+  &__slide {
+    width: auto;
+  }
+
+  &__slider {
+    position: relative;
+
+    @include adaptive-value('margin-bottom', 100, 50, 1);
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      position: absolute;
+      top: 20%;
+      background-color: var(--color-white);
+
+      &:hover {
+        background-color: #ccc;
+        border-color: #ccc;
+      }
+    }
+  }
+
+  &__show-more {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    background-color: #cbcbcb;
+    border: 1px dashed var(--color-black);
+    border-radius: 5px;
+    background-color: var(--color-white);
+    padding: 16px 52px 16px 36px;
+    position: relative;
+    transition: 200ms ease;
+    margin: 0 auto;
+    display: block;
+
+    @include breakpointsMaxW($bp-991) {
+      margin: initial;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      padding: 10px 34px 10px 16px;
+    }
+
+    &:hover {
+      background-color: var(--color-purple);
+      color: var(--color-white);
+      border-color: var(--color-purple);
+
+      &::after {
+        background-color: var(--color-white);
+      }
+    }
+
+    &::after {
+      @include elDef();
+      width: 10px;
+      height: 10px;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: var(--color-black);
+      transition: 200ms ease;
+      @include maskImage(url('../img/icons/chevron.svg'), contain);
+
+      @include breakpointsMaxW($bp-768) {
+        right: 16px;
+      }
+    }
+  }
+
+  &__content {
+    display: none;
+
+    &.active {
+      display: block;
+      animation: opacity-visibility 700ms ease forwards;
+    }
+  }
+
+  &--interest {
+    .products__slider {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.slider-bought-today {
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 40%;
+    border-color: var(--color-white);
+    border-radius: 0;
+  }
+
+  .swiper-button-next {
+    right: 20px;
+  }
+
+  .swiper-button-prev {
+    left: 20px;
+  }
+}

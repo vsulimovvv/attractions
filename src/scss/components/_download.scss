@@ -1,0 +1,38 @@
+.download {
+  color: var(--color-white);
+  @include background(cover);
+  @include adaptive-value('padding-top', 170, 100, 1);
+  @include adaptive-value('padding-bottom', 350, 150, 1);
+
+  @include breakpointsMinW(1921px) {
+    background-size: 100%;
+  }
+
+  &__title {
+    font-family: $FuturaNew;
+    line-height: 1.3;
+    @include adaptive-value('font-size', 40, 30, 1);
+    @include adaptive-value('margin-bottom', 40, 30, 1);
+  }
+
+  &__btn {
+    padding-bottom: 18px;
+    padding-top: 18px;
+
+    @include breakpointsMaxW($bp-768) {
+      text-align: left;
+      line-height: 1.2;
+      width: auto;
+    }
+
+    &:hover {
+      border-color: var(--color-white);
+    }
+  }
+
+  .btn--download {
+    &::after {
+      background-color: var(--color-dark);
+    }
+  }
+}

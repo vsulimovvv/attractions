@@ -1,0 +1,21 @@
+// Color
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+
+  --color-dark: #282828;
+  --color-bg: #fffbf6;
+  --color-accent: #ffcc1d;
+  --color-purple: #d159e7;
+}
+
+// * breakpointsMaxW
+$bp-container: 1270px;
+$bp-991: 991.98px;
+$bp-768: 767.98px;
+$bp-576: 576px;
+$bp-360: 359.98px;
+
+// *=== Fonts
+$FuturaNew: 'Futura New';
+$PTRootUI: 'PT Root UI';

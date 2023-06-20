@@ -1,0 +1,53 @@
+.form-subscribe {
+  width: 100%;
+  color: #585858;
+
+  &__group {
+    border-bottom: 1px solid #3d3d3d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+
+  &__btn {
+    position: relative;
+    padding-right: 35px;
+
+    @include breakpointsMaxW($bp-360) {
+      padding-right: 0;
+    }
+
+    &::after {
+      @include elDef();
+      width: 22px;
+      height: 22px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      background-color: #585858;
+      @include maskImage(url('../img/icons/arrow-right.svg'), contain);
+
+      @include breakpointsMaxW($bp-360) {
+        display: none;
+      }
+    }
+  }
+
+  &__input {
+    flex: 1;
+    margin-right: 50px;
+
+    @include breakpointsMaxW($bp-991) {
+      margin-right: 40px;
+    }
+
+    @include breakpointsMaxW($bp-576) {
+      margin-right: 20px;
+    }
+
+    &:focus {
+      outline: transparent;
+    }
+  }
+}

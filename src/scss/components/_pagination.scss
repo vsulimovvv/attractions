@@ -1,0 +1,40 @@
+.pagination {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-radius: 5px;
+    line-height: 1;
+    color: #222222;
+    transition: 200ms ease;
+
+    @include adaptive-value('width', 37, 32, 1);
+    @include adaptive-value('height', 37, 32, 1);
+    @include adaptive-value('font-size', 15, 13, 1);
+
+    &:hover {
+      color: #9ea1b9;
+    }
+
+    &:hover,
+    &.active {
+      color: var(--color-black);
+      background-color: var(--color-accent);
+    }
+  }
+}

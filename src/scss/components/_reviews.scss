@@ -1,0 +1,54 @@
+.reviews {
+  @include adaptive-value('padding-top', 70, 40, 1);
+
+
+  &__title {
+    text-align: center;
+    @include adaptive-value('font-size', 27, 20, 1);
+    @include adaptive-value('margin-bottom', 50, 30, 1);
+  }
+
+  &__slide {
+    width: 410px;
+    box-sizing: border-box;
+    @include adaptive-value('width', 410, 280, 1);
+  }
+
+  &__slider {
+    padding-bottom: 65px;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      background-color: #333333;
+      border: none;
+      transition: 200ms ease;
+      z-index: 3;
+      top: 40%;
+
+      &:hover {
+        background-color: var(--color-white);
+
+        &::after {
+          background-color: var(--color-dark);
+        }
+      }
+
+      &::after {
+        background-color: var(--color-white);
+      }
+    }
+  }
+}
+
+.reviews-video {
+  max-width: 410px;
+  width: 100%;
+  height: 230px;
+
+  iframe {
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+}

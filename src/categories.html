@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+<!-- simplebar -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.8/simplebar.min.css"
+/>
+
+<!-- fancybox -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.css" />
+
+<title>Атракционы</title>
+
+  </head>
+
+  <body>
+    <div class="popup popup--callback">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Заказать звонок</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+      </div>
+
+      <form class="form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-name">Имя</label>
+
+          <input
+            class="form-submit__input"
+            name="name"
+            id="online-name"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel">
+            Контактный телефон
+          </label>
+
+          <input
+            class="form-submit__input"
+            name="tel"
+            id="online-tel"
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            required
+          />
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <div class="site-wrapper">
+      <header class="header header--white">
+  <!-- Mobile Menu -->
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__top">
+      <a class="mobile-menu__logo logo" href="#">
+        <img src="img/logo.png" alt="логотип" />
+      </a>
+      <button
+        class="mobile-menu__close"
+        type="button"
+        aria-label="Закрыть меню"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 6L18 18"
+            stroke="#f1ebda"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M18 6L6 18"
+            stroke="#f1ebda"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Каталог</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>О нас</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Гарантии</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Доставка и оплата</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Новости</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Контакты</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Покупка в кредит</span></a>
+      </li>
+    </ul>
+
+    <div class="mobile-menu__btns">
+      <a class="mobile-menu__phone" href="tel:+74953635270"
+        >8 (495) 363 52 70</a
+      >
+      <a class="mobile-menu__phone" href="tel:+79660505699"
+        >8 (966) 050 56 99</a
+      >
+      <a
+        class="mobile-menu__btn btn btn--purple btn--download"
+        href="#"
+        download=""
+      >
+        Скачать прайс - лист
+      </a>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+
+  <div class="header__wrapper">
+    <div class="container">
+      <div class="header__wrapper-inner">
+        <button class="header__toggle" type="button" aria-label="Открыть меню">
+          <span class="header__toggle-line"></span>
+        </button>
+
+        <a class="header__logo logo" href="#">
+          <img src="img/logo.png" alt="logo" />
+        </a>
+
+        <div class="header__phones">
+          <a class="header__phone" href="tel:+74953635270">8 (495) 363 52 70</a>
+          <a class="header__phone" href="tel:+79660505699">8 (966) 050 56 99</a>
+        </div>
+
+        <a class="header__mail" href="mailto:sale@air-games.ru">
+          sale@air-games.ru
+        </a>
+
+        <div class="header__btns">
+          <button class="header__btn btn" type="button">Заказать звонок</button>
+          <a class="header__btn btn btn--purple btn--download" href="#"
+            >Скачать прайс - лист</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__bottom-inner">
+        <a class="header__catalog" href="#">Категории</a>
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Каталог </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">О нас </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Гарантии </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#"> Доставка и оплата </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Новости </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#"> Покупка в кредит </a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__search btn-search" href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <form class="form-search">
+    <input
+      class="form-search__input"
+      name="search"
+      type="text"
+      placeholder="Поиск"
+    />
+    <button class="form-search__btn" type="submit">
+      <svg>
+        <use xlink:href="images/sprite.svg#search"></use>
+      </svg>
+    </button>
+
+    <button class="form-search__close" type="button">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M6 6L18 18"
+          stroke="#0F0F0F"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M18 6L6 18"
+          stroke="#0F0F0F"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+  </form>
+</header>
+
+
+      <main class="main">
+        <div class="grid-relative grid-relative--left-static">
+  <div class="container">
+    <div class="grid-relative__wrapper">
+      <div class="grid-relative__left">
+        <form class="categories__filters filters">
+          <div class="filters__inner">
+            <div class="filters__box accordion">
+              <button class="filters__control accordion-control" type="button">
+                <span>Тематика аттракционов</span>
+              </button>
+              <div class="filters__content accordion-content">
+                <div class="filters__wrap">
+                  <ul
+                    class="filters__list"
+                    data-simplebar
+                    data-simplebar-auto-hide
+                  >
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Цирк</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Мультфильмы</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Животные</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Природа</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Океан</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Транспорт</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Цирк</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Мультфильмы</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Животные</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Природа</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Океан</span>
+                      </label>
+                    </li>
+                    <li class="filters__item">
+                      <label class="checkbox">
+                        <input class="checkbox__input" type="checkbox" />
+                        <span class="checkbox__box checkbox__box--green"></span>
+                        <span class="checkbox__text">Транспорт</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="filters__box accordion">
+              <button class="filters__control accordion-control" type="button">
+                <span>Цена</span>
+              </button>
+              <div class="filters__content accordion-content">
+                <div class="filters__wrap">
+                  <div class="range-slider range-slider--price">
+                    <div class="range-slider__range" id="slider-price"></div>
+                    <div class="range-slider__values">
+                      <input
+                        class="range-slider__min"
+                        type="text"
+                        placeholder="От 10 000"
+                      />
+                      <span>-</span>
+                      <input
+                        class="range-slider__max"
+                        type="text"
+                        placeholder="До 100 млн"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filters__box accordion">
+              <button class="filters__control accordion-control" type="button">
+                <span>Длина, м.</span>
+              </button>
+              <div class="filters__content accordion-content">
+                <div class="filters__wrap">
+                  <div class="range-slider range-slider--length">
+                    <div class="range-slider__range" id="slider-length"></div>
+                    <div class="range-slider__values">
+                      <input
+                        class="range-slider__min"
+                        type="text"
+                        placeholder="4"
+                      />
+                      <span>-</span>
+                      <input
+                        class="range-slider__max"
+                        type="text"
+                        placeholder="30"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filters__box accordion">
+              <button class="filters__control accordion-control" type="button">
+                <span>Ширина, м.</span>
+              </button>
+              <div class="filters__content accordion-content">
+                <div class="filters__wrap">
+                  <div class="range-slider range-slider--width">
+                    <div class="range-slider__range" id="slider-width"></div>
+                    <div class="range-slider__values">
+                      <input
+                        class="range-slider__min"
+                        type="text"
+                        placeholder="4"
+                      />
+                      <span>-</span>
+                      <input
+                        class="range-slider__max"
+                        type="text"
+                        placeholder="30"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filters__box accordion">
+              <button class="filters__control accordion-control" type="button">
+                <span>Общая высота, м.</span>
+              </button>
+              <div class="filters__content accordion-content">
+                <div class="filters__wrap">
+                  <div class="range-slider range-slider--height">
+                    <div class="range-slider__range" id="slider-height"></div>
+                    <div class="range-slider__values">
+                      <input
+                        class="range-slider__min"
+                        type="text"
+                        placeholder="4"
+                      />
+                      <span>-</span>
+                      <input
+                        class="range-slider__max"
+                        type="text"
+                        placeholder="12"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filters__box">
+              <button class="filters__btn" type="reset">Сбросить фильтр</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="grid-relative__right">
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Каталог</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">Карусели</a>
+            </li>
+          </ul>
+        </div>
+        <section class="categories">
+          <div class="categories__top">
+            <h1 class="categories__title">Карусели</h1>
+
+            <button
+              class="categories__filter"
+              type="button"
+              aria-label="Фильтры"
+            ></button>
+          </div>
+
+          <ul class="categories__list">
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/1.webp" type="image/webp" />
+                    <img src="img/products/1.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/1.webp" type="image/webp" />
+                    <img src="img/products/1.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/1.webp" type="image/webp" />
+                    <img src="img/products/1.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">3 194 148 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/2.webp" type="image/webp" />
+                    <img src="img/products/2.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">1 277 181 ₽</span>
+                </div>
+              </article>
+            </li>
+            <li class="categories__item">
+              <article class="products-card">
+                <a class="products-card__top" href="#">
+                  <picture>
+                    <source srcset="img/products/3.webp" type="image/webp" />
+                    <img src="img/products/3.jpg" alt="products" />
+                  </picture>
+                </a>
+                <div class="products-card__body">
+                  <h3 class="products-card__title">
+                    <a href="#"> Аттракцион прыгающие машинки </a>
+                  </h3>
+                  <span class="products-card__price">2 922 181 ₽</span>
+                </div>
+              </article>
+            </li>
+          </ul>
+
+          <div class="categories__pagination pagination">
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <button class="pagination__btn active" type="button">1</button>
+              </li>
+              <li class="pagination__item">
+                <button class="pagination__btn" type="button">2</button>
+              </li>
+              <li class="pagination__item">
+                <button class="pagination__btn" type="button">3</button>
+              </li>
+              <li class="pagination__item">
+                <button class="pagination__btn" type="button">4</button>
+              </li>
+              <li class="pagination__item">
+                <button class="pagination__btn" type="button">5</button>
+              </li>
+              <li class="pagination__item">
+                <span class="pagination__dots" type="button"> ... </span>
+              </li>
+              <li class="pagination__item">
+                <button class="pagination__btn" type="button">346</button>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <section class="news">
+  <div class="container">
+    <div class="news__top">
+      <h2 class="news__title">Обзоры и новости</h2>
+      <a class="news__link" href="#">Все новости</a>
+    </div>
+
+    <ul class="news__list">
+      <li class="news__item">
+        <article class="news-card">
+          <span class="news-card__badge">Обзоры</span>
+
+          <a class="news-card__top" href="#">
+            <picture>
+              <source srcset="img/news/1.webp" type="image/webp" />
+              <img src="img/news/1.jpg" alt="news" />
+            </picture>
+          </a>
+          <div class="news-card__body">
+            <div class="news-card__details">
+              <p class="news-card__detail">20.09.2022</p>
+              <p class="news-card__detail">15:00</p>
+            </div>
+            <h3 class="news-card__title">
+              <a href="#">
+                Маркетинг для батутного бизнеса. <br />
+                Часть 1. Социальные Сети
+              </a>
+            </h3>
+          </div>
+        </article>
+      </li>
+      <li class="news__item">
+        <article class="news-card">
+          <a class="news-card__badge" href="#">Обзоры</a>
+
+          <a class="news-card__top" href="#">
+            <picture>
+              <source srcset="img/news/2.webp" type="image/webp" />
+              <img src="img/news/2.jpg" alt="news" />
+            </picture>
+          </a>
+          <div class="news-card__body">
+            <div class="news-card__details">
+              <p class="news-card__detail">20.09.2022</p>
+              <p class="news-card__detail">15:00</p>
+            </div>
+            <h3 class="news-card__title">
+              <a href="#">
+                Самый продвинутый аттракцион детский паровозик на колесах
+              </a>
+            </h3>
+          </div>
+        </article>
+      </li>
+      <li class="news__item">
+        <article class="news-card">
+          <span class="news-card__badge">Обзоры</span>
+
+          <a class="news-card__top" href="#">
+            <picture>
+              <source srcset="img/news/3.webp" type="image/webp" />
+              <img src="img/news/3.jpg" alt="news" />
+            </picture>
+          </a>
+          <div class="news-card__body">
+            <div class="news-card__details">
+              <p class="news-card__detail">20.09.2022</p>
+              <p class="news-card__detail">15:00</p>
+            </div>
+            <h3 class="news-card__title">
+              <a href="#">
+                Новые изделия Умная Sreda на улицах
+                <span> наших городов</span>
+              </a>
+            </h3>
+          </div>
+        </article>
+      </li>
+      <li class="news__item">
+        <article class="news-card">
+          <span class="news-card__badge">Обзоры</span>
+
+          <a class="news-card__top" href="#">
+            <picture>
+              <source srcset="img/news/4.webp" type="image/webp" />
+              <img src="img/news/4.jpg" alt="news" />
+            </picture>
+          </a>
+          <div class="news-card__body">
+            <div class="news-card__details">
+              <p class="news-card__detail">20.09.2022</p>
+              <p class="news-card__detail">15:00</p>
+            </div>
+            <h3 class="news-card__title">
+              <a href="#">
+                Новые изделия Умная Sreda на улицах
+                <span> наших городов</span>
+              </a>
+            </h3>
+          </div>
+        </article>
+      </li>
+      <li class="news__item">
+        <article class="news-card">
+          <span class="news-card__badge">Обзоры</span>
+
+          <a class="news-card__top" href="#">
+            <picture>
+              <source srcset="img/news/5.webp" type="image/webp" />
+              <img src="img/news/5.jpg" alt="news" />
+            </picture>
+          </a>
+          <div class="news-card__body">
+            <div class="news-card__details">
+              <p class="news-card__detail">20.09.2022</p>
+              <p class="news-card__detail">15:00</p>
+            </div>
+            <h3 class="news-card__title">
+              <a href="#">
+                Новые изделия Умная Sreda на улицах
+                <span> наших городов</span>
+              </a>
+            </h3>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="subscribe">
+  <div class="container">
+    <div class="subscribe__top">
+      <h2 class="subscribe__title">Эксклюзивные скидки</h2>
+      <p class="subscribe__text">
+        Подпишитесь на наши новости и получите купон на скидку 10%!
+      </p>
+    </div>
+    <form class="subscribe__form form-subscribe">
+      <div class="form-subscribe__group">
+        <input
+          class="form-subscribe__input"
+          type="text"
+          placeholder="Введите Ваш e-mail"
+        />
+
+        <button class="form-subscribe__btn" type="submit">Подписаться</button>
+      </div>
+    </form>
+    <p class="subscribe__text">или присоединяйтесь к нам в соц сетях</p>
+    <div class="subscribe__socials socials">
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a
+            class="socials__link socials__link--fb"
+            href="#"
+            target="_blank"
+            aria-label="Facebook"
+          ></a>
+        </li>
+        <li class="socials__item">
+          <a
+            class="socials__link socials__link--vk"
+            href="#"
+            target="_blank"
+            aria-label="Вконтакте"
+          ></a>
+        </li>
+        <li class="socials__item">
+          <a
+            class="socials__link socials__link--tw"
+            href="#"
+            target="_blank"
+            aria-label="Twitter"
+          ></a>
+        </li>
+        <li class="socials__item">
+          <a
+            class="socials__link socials__link--inst"
+            href="#"
+            target="_blank"
+            aria-label="Instagram"
+          ></a>
+        </li>
+        <li class="socials__item">
+          <a
+            class="socials__link socials__link--yb"
+            href="#"
+            target="_blank"
+            aria-label="Youtube"
+          ></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__left">
+        <div class="footer__col">
+          <a class="footer__logo logo" href="#">
+            <img src="img/logo.png" alt="логотип" />
+          </a>
+          <address class="footer__address">
+            г. Котельники (МО), Дзержинское <br />
+            шоссе, 2, 5 этаж, офис 522
+          </address>
+        </div>
+        <div class="footer__cols">
+          <div class="footer__col">
+            <span class="footer__name">Каталог</span>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Карусели</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Паровозы</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Машинки</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Автодромы</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Семейные</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Зимние</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <span class="footer__name">Компания</span>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">О нас</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Гарантии</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Доставка и оплата</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Новости</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Контакты</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Покупка в кредит</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__right">
+        <div class="footer__col">
+          <span class="footer__name">Мы в соц сетях</span>
+          <ul class="footer-socials">
+            <li class="footer-socials__item">
+              <a class="footer-socials__link footer-socials__link--vk" href="#">
+                Вконтакте
+              </a>
+            </li>
+            <li class="footer-socials__item">
+              <a
+                class="footer-socials__link footer-socials__link--inst"
+                href="#"
+              >
+                Instagram
+              </a>
+            </li>
+            <li class="footer-socials__item">
+              <a class="footer-socials__link footer-socials__link--tg" href="#">
+                Telegram
+              </a>
+            </li>
+            <li class="footer-socials__item">
+              <a class="footer-socials__link footer-socials__link--ok" href="#">
+                Одноклассники
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col footer__col--support">
+          <span class="footer__name">Поддержка клиентов</span>
+
+          <span class="footer__schedule">Пн-Вс 9.00 - 18.00</span>
+
+          <div class="footer__phones">
+            <a class="footer__link" href="tel:+7495363-52-70">
+              +7(495)363-52-70 (звонок бесплатный)
+            </a>
+            <a class="footer__link" href="tel:+7966050-56-99">
+              +7(966)050-56-99
+            </a>
+          </div>
+
+          <div class="footer__mails">
+            <a class="footer__link" href="mailto:sale@air-games.ru">
+              sale@air-games.ru
+            </a>
+
+            <a class="footer__link" href="mailto:a.glubokov@air-games.ru">
+              a.glubokov@air-games.ru
+            </a>
+          </div>
+
+          <button class="footer__order-btn" type="button">
+            Онлайн заказ макета
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__bottom-inner">
+        <p>
+          © 2004 - 2022 ООО «Геймс Групп». Все права защищены.
+          <a href="#">Политика конфиденциальности.</a>
+          <a href="#"> Карта сайта. </a>
+        </p>
+        <div class="footer__bottom-right">
+          <ul class="footer__payment payment-list">
+            <li class="payment-list__item">
+              <svg>
+                <use xlink:href="img/sprite.svg#visa"></use>
+              </svg>
+            </li>
+            <li class="payment-list__item">
+              <svg>
+                <use xlink:href="img/sprite.svg#mastercard"></use>
+              </svg>
+            </li>
+            <li class="payment-list__item">
+              <svg>
+                <use xlink:href="img/sprite.svg#qiwibank"></use>
+              </svg>
+            </li>
+            <li class="payment-list__item">
+              <svg>
+                <use xlink:href="img/sprite.svg#yoomoney"></use>
+              </svg>
+            </li>
+            <li class="payment-list__item">
+              <svg>
+                <use xlink:href="img/sprite.svg#alfabank"></use>
+              </svg>
+            </li>
+            <li class="payment-list__item">
+              <svg>
+                <use xlink:href="img/sprite.svg#sberbank"></use>
+              </svg>
+            </li>
+          </ul>
+          <a
+            class="company"
+            href="https://razrabotka-saita.ru/"
+            target="_blank"
+          >
+            <span>Разработка сайта</span>
+            <img src="img/logo-company.png" alt="АдвансМедиа" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- wNumb -->
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/wnumb/1.2.0/wNumb.min.js"
+  integrity="sha512-igVQ7hyQVijOUlfg3OmcTZLwYJIBXU63xL9RC12xBHNpmGJAktDnzl9Iw0J4yrSaQtDxTTVlwhY730vphoVqJQ=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+
+<!-- simplebar -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.8/simplebar.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- fancybox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>
+
+<!-- <label class="checkbox">
+  <input class="checkbox__input" type="checkbox" required />
+  <span class="checkbox__box"></span>
+  <span class="checkbox__text">
+    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
+  </span> 
+</label> -->

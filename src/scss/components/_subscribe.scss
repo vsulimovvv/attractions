@@ -1,0 +1,31 @@
+.subscribe {
+  @include adaptive-value('padding-top', 80, 50, 1);
+  @include adaptive-value('padding-bottom', 80, 50, 1);
+
+  &__top {
+    text-align: center;
+    @include adaptive-value('margin-bottom', 70, 40, 1);
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    @include adaptive-value('font-size', 27, 20, 1);
+  }
+
+  &__form {
+    max-width: 620px;
+    width: 100%;
+    margin: 0 auto;
+    @include adaptive-value('margin-bottom', 70, 40, 1);
+  }
+
+  &__text {
+    text-align: center;
+    @include adaptive-value('font-size', 20, 16, 1);
+    @include adaptive-value('margin-bottom', 35, 20, 1);
+  }
+
+  &__socials{
+    margin: 0 auto;
+  }
+}

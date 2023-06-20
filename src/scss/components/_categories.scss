@@ -1,0 +1,121 @@
+.grid-relative {
+  margin-top: 100px;
+  padding-bottom: 80px;
+
+  &__left {
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    height: 700px;
+    z-index: 1;
+    background-color: #f9f9f9;
+
+    padding-top: 90px;
+    right: max(250px, calc((100% + 750px) / 2));
+
+    @include breakpointsMaxW($bp-container) {
+      width: 250px;
+      left: 15px;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      display: none;
+    }
+  }
+
+  &__right {
+    margin-left: 290px;
+
+    @include breakpointsMaxW($bp-container) {
+      margin-left: 280px;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+  &--left-static {
+    margin-top: 100px;
+
+    .grid-relative {
+      &__left {
+        @include breakpointsMaxW($bp-991) {
+          position: fixed;
+          top: 0;
+          left: 0;
+          display: block;
+          width: 90%;
+          height: 100vh;
+          z-index: 11;
+          padding: 30px 15px;
+          transform: translateX(-100%);
+          transition: 400ms ease;
+
+          &.active {
+            transform: translateX(0);
+          }
+
+          .filters__box {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.categories {
+  &__filter {
+    @include maskImage(url('../img/icons/filter.svg'), contain);
+    background-color: var(--color-dark);
+    width: 20px;
+    height: 20px;
+    display: none;
+
+    @include breakpointsMaxW($bp-991) {
+      display: block;
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include adaptive-value('margin-bottom', 30, 20, 1);
+  }
+
+  &__title {
+    font-weight: 400;
+    @include adaptive-value('font-size', 25, 20, 1);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    @include adaptive-value('margin-bottom', 70, 50, 1);
+
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 30px 20px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpointsMaxW($bp-360) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .products-card {
+    margin: 0 auto;
+
+    &__top {
+      @include adaptive-value('height', 390, 230, 1);
+    }
+  }
+}
