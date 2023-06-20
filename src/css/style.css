@@ -2013,6 +2013,7 @@ body.no-scroll {
   -o-object-fit: contain;
      object-fit: contain;
 }
+
 .side__icon {
   width: 8px;
   height: 8px;
@@ -2026,6 +2027,11 @@ body.no-scroll {
   -webkit-transition-delay: 100ms;
        -o-transition-delay: 100ms;
           transition-delay: 100ms;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 
 .about-top {

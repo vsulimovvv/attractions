@@ -242,15 +242,18 @@
       object-fit: contain;
     }
   }
+}
 
-  &__icon {
-    width: 8px;
-    height: 8px;
-    margin-left: auto;
-    transform: rotate(0);
-    transition: 200ms ease;
-    transition-delay: 100ms;
-  }
+.side__icon {
+  width: 8px;
+  height: 8px;
+  margin-left: auto;
+  transform: rotate(0);
+  transition: 200ms ease;
+  transition-delay: 100ms;
+  // Reset
+  user-select: none;
+  pointer-events: none;
 }
 
 .about-top {
